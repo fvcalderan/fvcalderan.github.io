@@ -1,3 +1,8 @@
+/* Authors:
+ * Felipe Vaiano Calderan
+ * Gabriel Augusto Lins Leal
+ * Silvio de Souza Neves Neto */
+ 
 // simulation variables
 let rows = 30;
 let cols = 30;
@@ -28,8 +33,8 @@ function random_position(min, max) {
 function insert_random_points() {
     // insert random points
     for (let i = 0; i < insert_random_amount; i++) {
-        position = random_position(1, cols-1);
-        automata.state[position["x"]][position["y"]].value = 1;
+        position = random_position(0, cols-1);
+        automata.set_state(position["x"], position["y"], 1);
     }
     draw_board();
 }
@@ -45,11 +50,13 @@ function toggle_simulation() {
 }
 
 function reset_automata() {
+    // initialize automata and draw the board
     automata.initialize();
     draw_board();
 }
 
 function create_UI() {
+    // create user interface
     btn_play_pause = createButton("Play/Pause");
     btn_play_pause.position(20, 0);
     btn_play_pause.mousePressed(toggle_simulation);
@@ -72,7 +79,15 @@ function mousePressed() {
         if (mouseY > size+10 && mouseY < (rows-1)*size+size+10) {
             index_x = floor((mouseX-size)/size);
             index_y = floor((mouseY-size-10)/size);
-            automata.state[index_x][index_y].value = !automata.state[index_x][index_y].value;
+
+            // this toggle uses if/else instead of "!logic" in case automata
+            // value system changes (for example: 0-255 instead of binary).
+            if (automata.get_state(index_x, index_y) == 1) {
+                automata.set_state(index_x, index_y, 0);
+            } else {
+                automata.set_state(index_x, index_y, 1);
+            }
+
             draw_board();
         }
     }
@@ -82,7 +97,7 @@ function draw_board() {
     // draw the board based on the automata state
     for (let x = 0; x < cols-1; x++) {
         for (let y = 0; y < rows-1; y++) {
-            if (automata.state[x][y].value == 1) {
+            if (automata.get_state(x, y) == 1) {
                 fill(active_color);
             } else {
                 fill(inactive_color);

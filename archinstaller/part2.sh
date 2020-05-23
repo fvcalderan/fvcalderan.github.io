@@ -9,7 +9,7 @@ BSD 3-Clause License
 Copyright (c) 2020, Felipe V. Calderan
 All rights reserved.
 
-Full license text in 1_arch_prechroot.sh.
+Full license text in download file.
 "
 
 # 4.1 retype dev
@@ -63,6 +63,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # 5.2 reboot
 printf "\nSystem will be rebooted to end the installation."
-printf "\nAfter login, 3_arch_final.sh can be ran for extra configs."
+printf "\nAfter login, part3.sh can be ran for extra configs."
 read -p "Press any key to continue... " -n 1 -s
 shutdown -r now

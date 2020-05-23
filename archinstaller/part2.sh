@@ -3,13 +3,14 @@
 # basic networking and passwd
 
 # Compact license text
+printf "\n"
 echo "
 BSD 3-Clause License
 
 Copyright (c) 2020, Felipe V. Calderan
 All rights reserved.
 
-Full license text in download file.
+Full license text in part1.sh.
 "
 
 # 4.1 retype dev
@@ -63,6 +64,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # 5.2 reboot
 printf "\nSystem will be rebooted to end the installation."
-printf "\nAfter login, part3.sh can be ran for extra configs."
+printf "\nAfter login, /archinstaller/part3.sh can be downloaded."
+printf "\nIt contains basic help for network, user and GUI configs.\n"
 read -p "Press any key to continue... " -n 1 -s
 shutdown -r now

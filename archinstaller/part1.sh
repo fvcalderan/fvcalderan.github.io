@@ -85,10 +85,12 @@ pacstrap /mnt base base-devel linux linux-firmware $editorname wget man-db man-p
 # genfstab, chroot
 
 # 3.1 important information
-printf "\n\npart1 is done! Download part2 from /archinstaller/part2.sh and run it."
-printf "\nPlease, take note of the Root Device name: $dev"
+printf "\n\npart1 is done! Download part2 and part3 from\n"
+printf "/archinstall/part2.sh and /archinstall/part3.sh"
+printf "Please, take note of the Root Device name: $dev"
 printf "\nIt'll need to be retyped as soon as part 2 is ran.\n"
 
 # 3.2 genfstab and chroot
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
+shutdown -r now

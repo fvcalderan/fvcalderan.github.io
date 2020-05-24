@@ -14,6 +14,7 @@ Full license text in part1.sh.
 "
 
 # 4.1 retype dev
+loadkeys br-abnt2
 printf "\nPlease, retype Root Device: "
 read dev
 
@@ -35,7 +36,9 @@ timedatectl set-timezone $timezonename
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
+echo LANG=pt_BR.UTF-8 > /etc/locale.conf
 localectl set-locale LANG=pt_BR.UTF-8
+echo KEYMAP=br-abnt2 > /etc/vconsole.conf
 localectl set-keymap br-abnt2
 
 # 4.4 set host name and basic net
@@ -64,7 +67,13 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # 5.2 reboot
 printf "\nSystem will be rebooted to end the installation."
-printf "\nAfter login, /archinstaller/part3.sh can be downloaded."
-printf "\nIt contains basic help for network, user and GUI configs.\n"
+printf "\nYou must login as \"root\", and after that, if"
+printf "\npart3.sh was downloaded, it can be ran. It contains"
+printf "\nbasic help for network and user configurations."
+printf "\n\nIf Arch fails to boot (Loading initial ramdisk),"
+printf "\nrestart the machine and in GRUB select:"
+printf "\n-> Advanced options for Arch Linux"
+printf "\n and then:"
+printf "\n Arch Linux, with Linux linux (fallback initramfs).\n"
 read -p "Press any key to continue... " -n 1 -s
-shutdown -r now
+exit

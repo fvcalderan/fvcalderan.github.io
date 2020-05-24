@@ -66,7 +66,7 @@ grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # 5.2 reboot
-printf "\nSystem will be rebooted to end the installation."
+printf "\nSystem needs reboot to end the installation."
 printf "\nYou must login as \"root\", and after that, if"
 printf "\npart3.sh was downloaded, it can be ran. It contains"
 printf "\nbasic help for network and user configurations."
@@ -74,6 +74,5 @@ printf "\n\nIf Arch fails to boot (Loading initial ramdisk),"
 printf "\nrestart the machine and in GRUB select:"
 printf "\n-> Advanced options for Arch Linux"
 printf "\n and then:"
-printf "\n Arch Linux, with Linux linux (fallback initramfs).\n"
-read -p "Press any key to continue... " -n 1 -s
-exit
+printf "\n->Arch Linux, with Linux linux (fallback initramfs).\n"
+printf "\nPlease type \"exit\"."

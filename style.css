@@ -11,6 +11,13 @@ img {
     width: 40%;
 }
 
+html,body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
 .topnav {
     background-color: #313131;
     overflow: hidden;
@@ -24,7 +31,7 @@ img {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
-    font-family:'Mono';
+    font-family:"Courier New", Courier, monospace;
 }
 
 .topnav a.active {
@@ -35,7 +42,7 @@ img {
 .body {
     background-color: #1c1c1c;
     color: #fff;
-    font-family:'Mono';
+    font-family:"Courier New", Courier, monospace;
 }
 
 .center {

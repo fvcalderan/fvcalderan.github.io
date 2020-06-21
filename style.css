@@ -1,0 +1,46 @@
+/* Author: Felipe V. Calderan
+ * Copyright: Copyright (C) 2020 Felipe V. Calderan
+ * License: BSD 3-Clause "New" or "Revised" License
+ * See the full license inside LICENSE.txt file */
+
+a {
+    color: #f6981e;
+}
+
+img {
+    width: 40%;
+}
+
+.topnav {
+    background-color: #313131;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:'Mono';
+}
+
+.topnav a.active {
+  background-color: #515151;
+  color: #f6981e;
+}
+
+.body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family:'Mono';
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

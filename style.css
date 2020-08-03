@@ -4,7 +4,7 @@
  * See the full license inside LICENSE.txt file */
 
 a {
-    color: #f6981e;
+    color: #f1fa8c;
 }
 
 img {
@@ -19,7 +19,7 @@ html,body {
 }
 
 .topnav {
-    background-color: #313131;
+    background-color: #2e2f39;
     overflow: hidden;
     border-bottom: 1px solid #fff;
 }
@@ -35,12 +35,12 @@ html,body {
 }
 
 .topnav a.active {
-  background-color: #515151;
-  color: #f6981e;
+  background-color: #ff79c6;
+  color: #1e1f29;
 }
 
 .body {
-    background-color: #1c1c1c;
+    background-color: #1e1f29;
     color: #fff;
     font-family:"Courier New", Courier, monospace;
 }

@@ -45,6 +45,12 @@ img {
     font-family:"Courier New", Courier, monospace;
 }
 
+@media screen and (max-width: 800px) {
+    .body {
+        width: 100%;
+    }
+}
+
 .center {
   display: block;
   margin-left: auto;

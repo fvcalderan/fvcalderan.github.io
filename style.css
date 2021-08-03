@@ -27,7 +27,7 @@ img {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
-    font-family:"Courier New", Courier, monospace;
+    font-family:"Cascadia Mono", Courier, monospace;
 }
 
 .topnav a.active {
@@ -42,7 +42,7 @@ img {
     padding: 10px;
     background-color: #282a36;
     color: #fff;
-    font-family:"Courier New", Courier, monospace;
+    font-family:"Cascadia Mono", Courier, monospace;
 }
 
 .center {

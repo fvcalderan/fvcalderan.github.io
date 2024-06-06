@@ -4,7 +4,15 @@
  * See the full license inside LICENSE.txt file */
 
 a {
-    color: #efc764;
+    color: #81c8be;
+}
+
+h2 {
+    color: #ca9ee6;
+}
+
+h3 {
+    color: #eebebe;
 }
 
 img {
@@ -15,14 +23,14 @@ img {
 }
 
 .topnav {
-    background-color: #3a2624;
+    background-color: #292c3c;
     overflow: hidden;
-    border-bottom: 1px solid #fff2e7;
+    border-bottom: 1px solid #c6d0f5;
 }
 
 .topnav a {
     float: left;
-    color: #fff2e7;
+    color: #c6d0f5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,8 +39,8 @@ img {
 }
 
 .topnav a.active {
-    background-color: #a45449;
-    color: #fff2e7;
+    background-color: #ca9ee6;
+    color: #292c3c;
 }
 
 .body {
@@ -40,8 +48,8 @@ img {
     margin: auto;
     background: white;
     padding: 10px;
-    background-color: #261c1e;
-    color: #fff2e7;
+    background-color: #303446;
+    color: #c6d0f5;
     font-family:"Cascadia Mono", Courier, monospace;
 }
 

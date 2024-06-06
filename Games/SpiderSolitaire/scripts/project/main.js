@@ -66,8 +66,8 @@ async function onBeforeProjectStart(runtime) {
         onBeforeLayoutStart(runtime),
     );
 
-    // Events that happen when there is a mouse click / screen tap
-    runtime.addEventListener("pointerdown", (e) => onMouseDown(runtime, e));
+    // Events that happen when there is a mouse click
+    runtime.addEventListener("mousedown", (e) => onMouseDown(runtime, e));
 }
 
 function onBeforeLayoutStart(runtime) {

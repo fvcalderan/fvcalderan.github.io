@@ -56,6 +56,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.HasNthTouch,
 		C3.Plugins.Touch.Exps.X,
 		C3.Plugins.Touch.Exps.Y,
+		C3.Plugins.Touch.Cnds.OnNthTouchEnd,
 		C3.Behaviors.Tween.Acts.TweenValue,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Arr.Acts.Push,

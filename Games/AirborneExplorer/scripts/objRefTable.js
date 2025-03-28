@@ -133,6 +133,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnAnyAnimFinished,
 		C3.Plugins.PlatformInfo.Cnds.IsOnMobile,
 		C3.Plugins.AJAX.Acts.RequestFile,
+		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.Dictionary.Acts.JSONLoad,
 		C3.Plugins.AJAX.Exps.LastData,
 		C3.Plugins.LocalStorage.Acts.SetItem,

@@ -1943,7 +1943,6 @@ self.C3_ExpressionFuncs = [
 		() => "MM Reset Save",
 		() => "MenuSelect",
 		() => "MM Toggle Sound",
-		() => "Input method",
 		() => "Player Profile",
 		p => {
 			const n0 = p._GetNode(0);

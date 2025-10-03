@@ -1722,11 +1722,12 @@ self.C3_ExpressionFuncs = [
 		() => "Default",
 		() => "Player General",
 		() => "Player Pickup",
+		() => "CoinFade",
 		() => "Coin",
 		() => "SFXCoin",
-		() => "EnemyDeath",
 		() => "Enemies",
 		() => "Enemy General Procedures",
+		() => "EnemyDeath",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => ((n0.ExpObject()) === ("EnemyBoar") ? 1 : 0);
@@ -2018,9 +2019,11 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "Coins",
 		p => {
-			const v0 = p._GetNode(0).GetVar();
+			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
-			return () => and(and(v0.GetValue(), " / "), v1.GetValue());
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			return () => and(and(f0(v1.GetValue(), v2.GetValue()), " / "), v3.GetValue());
 		},
 		() => "End of Level Confirm",
 		p => {

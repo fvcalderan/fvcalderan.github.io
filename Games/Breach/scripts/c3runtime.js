@@ -2680,6 +2680,7 @@ self.C3_ExpressionFuncs = [
 			return () => ((v0.GetValue() + 1) % 3);
 		},
 		() => "Credits",
+		() => "BGM_002_groove",
 		() => "LaunchObject",
 		() => "Objects",
 		p => {

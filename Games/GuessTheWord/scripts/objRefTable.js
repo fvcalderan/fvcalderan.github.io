@@ -116,6 +116,7 @@ self.C3_JsPropNameTable = [
 	{VirtualEnter: 0},
 	{letter: 0},
 	{green: 0},
+	{yellow: 0},
 	{VirtualKey: 0},
 	{Letter: 0},
 	{guessNo: 0},
